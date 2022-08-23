@@ -15,7 +15,7 @@ module.exports = {
       // minimumCacheTTL is in seconds, must be integer 0 or more
       minimumCacheTTL: 60,
       // ordered list of acceptable optimized image formats (mime types)
-      formats: ['image/webp', 'image/png', 'image/jpg', 'image/jpeg', 'image/text'],
+      formats: ['image/webp'],
       // enable dangerous use of SVG images
       dangerouslyAllowSVG: false,
       // set the Content-Security-Policy header

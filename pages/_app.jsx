@@ -7,13 +7,18 @@ import shield from './public/Shield.png'
 export default function HomePage() {
     const array1 = ['Matt Johnson', 'Matt Johnson', 'Bart Paden', 'Ryan Doss', 'Jared Malcolm'];
     const array2 = ['Matt Johnson', 'Bart Paden', 'Bart Paden', 'Jordan Heigle', 'Jordan Heigle', 'Tyler Viles'];
-    const resultArray = ['test1', 'test'];
+    const addedArray = array1.concat(array2);
+    const resultArray = [...new Set(addedArray)];
 
     function handleClick(){
-        if (id=array-row && className==={arrayShow})
-            return className={arrayShow};
-        else
-        return className={arrayShow};
+        if (document.getElementById("array-row").classList.contains("arrayShow")) {
+            document.getElementById("array-notice").classList.add("arrayShow");
+            document.getElementById("array-notice").classList.remove("arrayHide");
+        }
+        else {
+            document.getElementById("array-row").classList.add("arrayShow");
+            document.getElementById("array-row").classList.remove("arrayHide");
+        }
     }
 
     return (
@@ -53,9 +58,9 @@ export default function HomePage() {
     </div>
     <div id="array-row" class="arrayHide">
         <ul>
-            {resultArray.map((name) => (
-                <li key={name}>{name}</li>
-            ))}
+        {resultArray.map((name) => (
+          <li key={name}>{name}</li>
+        ))}
         </ul>
         <p id="array-notice" class="arrayHide">The array is already showing.</p>
     </div>
