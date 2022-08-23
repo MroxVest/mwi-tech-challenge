@@ -28,7 +28,7 @@ export default function HomePage() {
             <Image src={logo} alt="Midwestern Interactive logo and MIDWESTERN in text" width={280} height={65} />
             </div>
             <div id="contact">
-                <p><a href="./contact">contact</a></p>
+                <p><a href="/contact">contact</a></p>
             </div>
     </header>
     <div id="box-row">
