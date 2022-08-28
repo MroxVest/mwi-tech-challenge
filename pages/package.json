@@ -2,8 +2,7 @@
   "name": "mwi-tech-challenge",
   "version": "1.0.1",
     "scripts": {
-      "dev": "next dev",
-      "build": "next build && next export"
+      "dev": "next dev"
     },
   "dependencies": {
     "next": "^12.1.0",
